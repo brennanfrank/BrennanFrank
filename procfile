@@ -1,2 +1,1 @@
-web: gunicorn humanitythegame:humanitythegame
-
+web: gunicorn app:app
