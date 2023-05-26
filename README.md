@@ -1,1 +1,3 @@
-# Humanity_TheGame
+# Welcome to Humanity: The Game
+#### Please Play Responsibly
+
