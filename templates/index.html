@@ -7,15 +7,18 @@
     <!-- Bootstrap CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
-      
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=CreepyFont&display=swap">
+    
+
     <!-- Custom CSS Styling -->
     <style>  
      
         body, html {
             height: 100%;
             margin: 0;
-            font-family: 'Open Sans', sans-serif;
         }
+
         .bg {
             background-image: url('https://rare-gallery.com/mocahbig/473499-forest-trees-nature-path.jpg');
             height: 100%;
@@ -30,14 +33,28 @@
             font-size: 24px;
             background-color: rgba(255, 255, 255, 1.0);
         }
-        .btn {
+        .container {
             position: absolute;
-            top: 50%;
-            left: 25%;
-            transform: translate(-50%, -50%);
+            top: 25%;
+            left: 5%;
+        }
+        .btn {
+            display: block;
             font-size: 20px;
+            text-align: center;
             padding: 10px 20px;
             cursor: pointer;
+            color: white;
+            background-color: green;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            color: white;
+            background-color: black;
+        }
+        h1 {
+            color: white;
         }
     </style>
     
@@ -51,11 +68,29 @@
 <body>
 
     <div class="bg">
+
         <div class="header">
             <p>Welcome to Humanity: The Game.</p>
             <p>Please Play Responsibly.</p>
         </div>
-        <button class="btn">Begin</button>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col">
+                    <h1>Choose Your Path:</h1>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <button class="btn">Begin</button>
+                </div>
+            </div>
+        
+        </div>
+    
     </div>
 
 
