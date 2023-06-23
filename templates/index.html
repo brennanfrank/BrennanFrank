@@ -33,7 +33,7 @@
         .header {
             text-align: left;
             padding: 25px;
-            font-size: 25px;
+            /* font-size: 25px; */
             background-color: rgba(0, 0, 0, 1.0);
         }
         .container {
@@ -42,7 +42,7 @@
             left: 5%;
         }
         .bg {
-            background: url('https://assets2.cbsnewsstatic.com/hub/i/r/2022/11/18/61028ff2-0642-40a9-b8b9-37b5817d1139/thumbnail/1200x630/a8c4e88e4fb839a3d39df07bca1e8acc/gettyimages-507000597.jpg') no-repeat center center;
+            background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F773433.jpg&f=1&nofb=1&ipt=ababcb0891303d9f52c7302a4737a0d66b2e1e87cfcbd9f1f14773191aa47e8d&ipo=images') no-repeat center center;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -53,9 +53,13 @@
             background-size: cover;
             position: relative;
         }
-        .row {
-            font-size: 14px;
+        .row:not(:last-child) {
+            margin-bottom: 1.5rem;  /* Add bottom margin to all rows except the last one */
         }
+        p {
+            font-size: 20px;
+        }
+
     </style>
 </head>
 
@@ -67,11 +71,63 @@
 
     <div class="bg">
         <div class="container">
+            
+
             <div class="row">
-                <div class="col">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <h1>Brennan Frank</h1>
+                    <h3>Business Intelligence Engineer</h3>
+                </div>
+           
+
+                <div class="col-sm-12 col-md-6 col-lg-4">
                     <script src="https://tryhackme.com/badge/1975773"></script>
                 </div>
             </div>
+
+
+            <div class="row">
+                <div class="col">
+                    <p>Hello World :)</p>
+                    <p>My name is Brennan, I'm a Business Intelligence Engineer with five years experience working with BI tools including Tableau, Power BI, and SQL.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>I'm self taught, and will learn a new framwork, programming language, or software stack as needed to get a job done!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>So far I've taught myself three frameworks in Python alone -- Django, Flask, and DBT (Data Build Tools). I love to learn, build, and analyze.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>The first app I built was a web app for my first company out of college, built on the Django framework. 
+                        It allowed for a simple form entry for account managers to input data on their ad campaigns, which fed to a Tableau dashboard that tracked 
+                        the amount the campaign spent v its budget. This dashboard was re-inserted as an iframe back into the app so in real time 
+                        AMs could see how their campaigns were spending v. their allowance, with a friendly GUI.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <p>I've since moved on to Python for automation of data flows, using Data Build Tools to optimize ETL processes.
+                        At a recent position, I led the design of a new DBT architecture that allowed for reduction in data redundancy.
+                        Instead of having multiple ETL jobs recreating certain temp tables over and over in each script, I created staging and core layers in DBT
+                        that allowed for the creation of these tables only once, and fed the data down the pipeline to other DBT data models. This 
+                        created consistency of data pulls and reduced demand as the logic was not necessary to recreate.</p>
+                </div>
+            </div>
+            
+
+
+
         </div>
     </div>
             
